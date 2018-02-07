@@ -4,9 +4,14 @@ This program is still a work in progress and not functional beyond
 a proof of concept.
 ** Overview
 This is an [[https://en.wikipedia.org/wiki/Ncurses][ncurses]] based terminal plotting program for
-multidimensional plots.
+multidimensional plots. The motivation is to have a highly portable
+yet still useful (i.e. multidimensional) plotting program. For
+instance NCPlot could be used on a high performance computing (HPC)
+system (where only a terminal is available) to quickly check the
+output of simulations, avoiding unnecessarily transferring large data
+files to local workstations for visualization.
 ** Install
-1. This program requires =ncurses=. It can be installed on Debian
+1. NCPlot requires =ncurses=. It can be installed on Debian
    based systems (Ubuntu) using =sudo apt install libncurses5-dev
    libncursesw5-dev=
 2. Use make to install =make clean all=
@@ -18,10 +23,9 @@ obvious and simple at this point. More information can be obtained
 from the example below.
 ** Example
 A python program to generate a sample data set can be found in the
-=./test_data= folder ([[file:./test_data/generate_test_data.py][generate_test_data.py]]). The data file will be
-about 75MB and contain 1 million data points, but NCPlot will
-have no trouble and load it in about one second. To load the test data
-(=test.dat=) using NCPlot:
+=./test_data= folder ([[file:./test_data/generate_test_data.py][generate_test_data.py]]). The data file (=test.dat=) will be
+about 71MB and contain one million data points, but NCPlot will have no
+trouble and will load it in about one second. To plot the data using NCPlot:
 1. navigate to the root directory 
 2. start NCPlot by running =./bin/ncplot=
 3. type =i= then =load=

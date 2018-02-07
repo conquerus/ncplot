@@ -3,22 +3,22 @@
 This program is still a work in progress and not functional beyond
 a proof of concept.
 ** Overview
-This is an [[https://en.wikipedia.org/wiki/Ncurses][ncurses]] based terminal plotting program for
-multidimensional plots. The motivation is to have a highly portable
-yet still useful (i.e. multidimensional) plotting program. For
-instance NCPlot could be used on a high performance computing (HPC)
-system (where only a terminal is available) to quickly check the
-output of simulations, avoiding unnecessarily transferring large data
-files to local workstations for visualization.
+This is an [[https://en.wikipedia.org/wiki/Ncurses][ncurses]] based terminal plotting program. The motivation is
+to provide a highly portable yet still useful (i.e. multidimensional)
+plotting program. For instance NCPlot could be used on a high
+performance computing (HPC) system (where only a terminal is
+available) to quickly check the output of simulations; avoiding
+unnecessarily transferring large data files to local workstations for
+visualization.
 ** Install
 1. NCPlot requires =ncurses=. It can be installed on Debian
    based systems (Ubuntu) using =sudo apt install libncurses5-dev
-   libncursesw5-dev=
+   libncursesw5-dev=.
 2. Use make to install =make clean all=
 3. The executable is saved in =./bin=
 ** Use
-At present the program only accepts three commands: =load, plot, and
-exit=. Enter a command by first typing =i=. The commands are fairly
+At present the program only accepts three commands: =load=, =plot=, and
+=exit=. Enter a command by first typing =i=. The commands are fairly
 obvious and simple at this point. More information can be obtained
 from the example below.
 ** Example
@@ -35,8 +35,8 @@ trouble and will load it in about one second. To plot the data using NCPlot:
    a WIP)
 7. for the =x column=, =y column=, and =data column= enter =0=, =1=,
    and =2=, respectively
-The output should look something like the figure below (left), the output of
-Matplotlib is also shown for comparison (right).
+The output should look something like the figure below (top), the output of
+Matplotlib is also shown for comparison (bottom).
 
 [[file:./test_data/ncplot_plot.png]]
-[[file:./matplotlib_plot.png]]
+[[file:./test_data/matplotlib_plot.png]]

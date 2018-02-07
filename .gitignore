@@ -1,0 +1,2 @@
+*.o
+./test_data/test.dat

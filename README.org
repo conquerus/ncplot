@@ -1,0 +1,38 @@
+* NCPlot
+** Disclaimer
+This program is still a work in progress and not functional beyond
+a proof of concept.
+** Overview
+This is an [[https://en.wikipedia.org/wiki/Ncurses][ncurses]] based terminal plotting program for
+multidimensional plots.
+** Install
+1. This program requires =ncurses=. It can be installed on Debian
+   based systems (Ubuntu) using =sudo apt install libncurses5-dev
+   libncursesw5-dev=
+2. Use make to install =make clean all=
+3. The executable is saved in =./bin=
+** Use
+At present the program only accepts three commands: =load, plot, and
+exit=. Enter a command by first typing =i=. The commands are fairly
+obvious and simple at this point. More information can be obtained
+from the example below.
+** Example
+A python program to generate a sample data set can be found in the
+=./test_data= folder ([[file:./test_data/generate_test_data.py][generate_test_data.py]]). The data file will be
+about 75MB and contain 1 million data points, but NCPlot will
+have no trouble and load it in about one second. To load the test data
+(=test.dat=) using NCPlot:
+1. navigate to the root directory 
+2. start NCPlot by running =./bin/ncplot=
+3. type =i= then =load=
+4. enter =3= as the number of variables
+5. type =i= then =plot=
+6. enter =3= as the number of variables (I know it's redundant...still
+   a WIP)
+7. for the =x column=, =y column=, and =data column= enter =0=, =1=,
+   and =2=, respectively
+The output should look something like the figure below (left), the output of
+Matplotlib is also shown for comparison (right).
+
+[[file:./test_data/ncplot_plot.png]]
+[[file:./matplotlib_plot.png]]

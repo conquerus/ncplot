@@ -6,7 +6,7 @@ a proof of concept.
 This is an [[https://en.wikipedia.org/wiki/Ncurses][ncurses]] based terminal plotting program. The motivation is
 to provide a highly portable yet still useful (i.e. multidimensional)
 plotting program. For instance NCPlot could be used on a high
-performance computing (HPC) system (where only a terminal is
+performance computing (HPC) system (where only a shell is
 available) to quickly check the output of simulations; avoiding
 unnecessarily transferring large data files to local workstations for
 visualization.
@@ -38,5 +38,14 @@ trouble and will load it in about one second. To plot the data using NCPlot:
 The output should look something like the figure below (top), the output of
 Matplotlib is also shown for comparison (bottom).
 
-[[file:./test_data/ncplot_plot.png]]
-[[file:./test_data/matplotlib_plot.png]]
+[[file:./example/ncplot_plot.png]]
+[[file:./example/matplotlib_plot.png]]
+
+** Example 2
+Below is an example of a lid-driven cavity flow plotted using NCPlot
+(left) and Tecplot (right). The case was solved using a LBM solver
+([[https://github.com/conquerus/lbm-c][see this repo]]). The contour plots are consistent, however NCPlot does
+not have the ability to plot streamlines.
+
+[[file:./example/ldc_ncplot.png]]
+[[file:./example/ldc_tecplot.png]]

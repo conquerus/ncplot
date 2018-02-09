@@ -43,8 +43,8 @@ Matplotlib is also shown for comparison (bottom).
 
 ** Example 2
 Below is an example of a lid-driven cavity flow plotted using NCPlot
-(left) and Tecplot (right). The case was solved using a LBM solver
-([[https://github.com/conquerus/lbm-c][see this repo]]). The contour plots are consistent, however NCPlot does
+(top) and Tecplot (bottom). The case was solved using the Lattice
+Boltzmann Method ([[https://github.com/conquerus/lbm-c][see this repo]]). The contour plots are consistent, however NCPlot does
 not have the ability to plot streamlines.
 
 [[file:./example/ldc_ncplot.png]]
